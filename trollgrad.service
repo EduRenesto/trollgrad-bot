@@ -1,0 +1,16 @@
+[Unit]
+Description=Trollgrad Bot
+
+[Service]
+Type=oneshot
+
+User=trollgrad
+Group=trollgrad
+
+Environment=TOKEN=<token_aqui>
+Environment=DATE_FILE=<datefile_aqui>
+
+ExecStart=/srv/trollgrad/bot.pl
+
+[Install]
+WantedBy=multi-user.target

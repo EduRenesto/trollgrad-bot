@@ -1,0 +1,9 @@
+[Unit]
+Description=Periodically run Trollgrad Bot
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=20min
+
+[Install]
+WantedBy=timers.target
